@@ -41,6 +41,7 @@
 #include <sys/uio.h> /* writev */
 
 /* The maximum size of Diameter message we accept to receive (<= 2^24) to avoid too big mallocs in case of trashed headers */
+#define DISABLE_SCTP
 #ifndef DIAMETER_MSG_SIZE_MAX
 #define DIAMETER_MSG_SIZE_MAX	65535	/* in bytes */
 #endif /* DIAMETER_MSG_SIZE_MAX */
